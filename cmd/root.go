@@ -22,29 +22,29 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "opencode",
-	Short: "Terminal-based AI assistant for software development",
-	Long: `OpenCode is a powerful terminal-based AI assistant that helps with software development tasks.
+	Use:   "waifu-code",
+	Short: "Kawaii terminal-based AI assistant for software development",
+	Long: `WaifuCode is a kawaii terminal-based AI assistant that helps with software development tasks.
 It provides an interactive chat interface with AI capabilities, code analysis, and LSP integration
 to assist developers in writing, debugging, and understanding code directly from the terminal.`,
 	Example: `
-  # Run in interactive mode
-  opencode
+  # Run in interactive mode (kawaii edition!)
+  waifu-code
 
   # Run with debug logging
-  opencode -d
+  waifu-code -d
 
   # Run with debug logging in a specific directory
-  opencode -d -c /path/to/project
+  waifu-code -d -c /path/to/project
 
   # Print version
-  opencode -v
+  waifu-code -v
 
   # Run a single non-interactive prompt
-  opencode -p "Explain the use of context in Go"
+  waifu-code -p "Explain the use of context in Go"
 
   # Run a single non-interactive prompt with JSON output format
-  opencode -p "Explain the use of context in Go" -f json
+  waifu-code -p "Explain the use of context in Go" -f json
   `,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		// If the help flag is set, show the help message

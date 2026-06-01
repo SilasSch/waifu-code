@@ -3,7 +3,7 @@ package version
 import "runtime/debug"
 
 // Build-time parameters set via -ldflags
-var Version = "unknown"
+var Version = "dev"
 
 // A user may install pug using `go install github.com/opencode-ai/opencode@latest`.
 // without -ldflags, in which case the version above is unset. As a workaround
